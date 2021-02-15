@@ -152,7 +152,7 @@ img {
 .header a {
   font-weight: 800;
   color: #04151f;
-  padding: 5px;
+  padding: 5px 0;
   letter-spacing: 1.2px;
   font-size: 12px;
   text-transform: uppercase;
@@ -204,7 +204,7 @@ img {
 }
 
 .header__contacts a {
-  font-size: 14px;
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +507,8 @@ img {
 
 /*jurist, fiz, about*/
 
-.about {
+.about,
+.jurist {
   background: #f6f7f9;
 }
 
@@ -968,49 +969,6 @@ img {
   display: none;
 }
 
-/*requisites*/
-
-.requisites {
-  padding: 60px 0;
-}
-
-.requisites__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.requisites__list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  font-size: calc(16px + 4 * ((100vw - 320px) / 1420));
-  line-height: 200%;
-  margin-bottom: 40px;
-  margin: 20px 0px 0px 0px;
-}
-
-.requisites__list .col-xl-4 {
-  font-weight: 700;
-}
-
 /*gallery*/
 
 .gallery {
@@ -1238,17 +1196,19 @@ img {
           align-items: center;
 }
 
-@media (max-width: 992px) {
-  .header {
-    position: absolute;
+@media (max-width: 1452px) {
+  .header__contacts img {
+    height: 30px;
   }
+}
 
+@media (max-width: 992px) {
   .header a {
     padding: 3px;
   }
 
   .header__contacts img {
-    height: 25px;
+    height: 20px;
   }
 
   .header__contacts a {
@@ -1261,6 +1221,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .header {
+    position: absolute;
+  }
+
   .header__logo {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -1364,8 +1328,24 @@ img {
     bottom: calc(50% - 1px);
   }
 
+  .banner {
+    padding: 50px 0;
+  }
+
+  .banner__title {
+    margin: 0px 0px 0px 0px;
+  }
+
+  .banner span {
+    margin: 10px 0px;
+  }
+
   .banner img {
     max-width: 100%;
+  }
+
+  .services {
+    padding: 30px 0;
   }
 
   .services__container {
@@ -1373,6 +1353,12 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .jurist,
+  .fiz,
+  .about {
+    padding: 30px 0;
   }
 
   .jurist__container,
@@ -1400,11 +1386,19 @@ img {
     margin: 0px 0px 25px 0px;
   }
 
+  .pluses {
+    padding: 30px 0;
+  }
+
   .pluses__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .testimonials {
+    padding: 30px 0;
   }
 
   .testimonials__container {
@@ -1414,9 +1408,18 @@ img {
             flex-direction: column;
   }
 
+  .slider {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
   .slider__item img {
     width: 150px;
     height: 150px;
+  }
+
+  .form {
+    padding: 30px 0;
   }
 
   .contact-form {
@@ -1426,6 +1429,10 @@ img {
   .contact-form__inputs input,
   .contact-form__inputs textarea {
     width: 100%;
+  }
+
+  .gallery {
+    padding: 30px 0;
   }
 
   .gallery__slider img {
