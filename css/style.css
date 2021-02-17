@@ -1355,6 +1355,12 @@ img {
             flex-direction: column;
   }
 
+  .fiz__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
   .jurist,
   .fiz,
   .about {
@@ -1368,6 +1374,14 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+
+  .jurist__text,
+  .fiz__text,
+  .about__text {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
 
   .jurist .about__img,
